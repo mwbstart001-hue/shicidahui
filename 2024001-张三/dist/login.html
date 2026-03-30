@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国诗词大会 - 登录</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 头部 -->
+  <header class="header">
+    <div class="container">
+      <h1>中国诗词大会</h1>
+      <p class="subtitle">赏中华诗词，寻文化基因，品生活之美</p>
+    </div>
+  </header>
+
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html">首页</a>
+        </li>
+        <li class="nav-item">
+          <a href="list.html">诗词列表</a>
+          <div class="dropdown">
+            <a href="list.html#classic">经典诗词</a>
+            <a href="list.html#players">选手风采</a>
+            <a href="list.html#seasons">季数列表</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="detail.html">节目详情</a>
+          <div class="dropdown">
+            <a href="detail.html#intro">节目介绍</a>
+            <a href="detail.html#highlights">精彩看点</a>
+            <a href="detail.html#hosts">主持人介绍</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="login.html">登录</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 主内容 -->
+  <main class="main-content">
+    <div class="container">
+      <div class="login-container">
+        <div class="login-header">
+          <h2>用户登录</h2>
+          <p>欢迎回到中国诗词大会</p>
+        </div>
+        
+        <form id="loginForm" onsubmit="return handleLogin(event)">
+          <div class="form-group">
+            <label for="username">用户名</label>
+            <input 
+              type="text" 
+              id="username" 
+              name="username" 
+              placeholder="请输入用户名" 
+              required
+              autocomplete="username"
+            >
+          </div>
+          
+          <div class="form-group">
+            <label for="password">密码</label>
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              placeholder="请输入密码" 
+              required
+              autocomplete="current-password"
+            >
+          </div>
+          
+          <button type="submit" class="submit-btn">登 录</button>
+        </form>
+        
+        <div class="form-footer">
+          <p>还没有账号？<a href="#">立即注册</a></p>
+          <p style="margin-top: 10px;"><a href="#">忘记密码？</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 底部版权 -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">计算机科学与技术学院</p>
+      <p>班级：软件工程1班 | 学号：2024001 | 姓名：张三</p>
+      <p>&copy; 2024 中国诗词大会 版权所有</p>
+    </div>
+  </footer>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+      
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      
+      // 简单验证
+      if (username.trim() === '') {
+        alert('请输入用户名');
+        return false;
+      }
+      
+      if (password.trim() === '') {
+        alert('请输入密码');
+        return false;
+      }
+      
+      // 模拟登录成功
+      alert('登录成功！欢迎 ' + username + ' 回到中国诗词大会！');
+      
+      // 登录成功后跳转到首页
+      window.location.href = 'index.html';
+      
+      return false;
+    }
+  </script>
+</body>
+</html>

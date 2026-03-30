@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国诗词大会 - 首页</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 头部 -->
+  <header class="header">
+    <div class="container">
+      <h1>中国诗词大会</h1>
+      <p class="subtitle">赏中华诗词，寻文化基因，品生活之美</p>
+    </div>
+  </header>
+
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html">首页</a>
+        </li>
+        <li class="nav-item">
+          <a href="list.html">诗词列表</a>
+          <div class="dropdown">
+            <a href="list.html#classic">经典诗词</a>
+            <a href="list.html#players">选手风采</a>
+            <a href="list.html#seasons">季数列表</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="detail.html">节目详情</a>
+          <div class="dropdown">
+            <a href="detail.html#intro">节目介绍</a>
+            <a href="detail.html#highlights">精彩看点</a>
+            <a href="detail.html#hosts">主持人介绍</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="login.html">登录</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 主内容 -->
+  <main class="main-content">
+    <div class="container">
+      <!-- 轮播图 -->
+      <div class="carousel" id="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-content">
+              <h2>诗词之美</h2>
+              <p>品味千年文化，感受诗词魅力<br>在诗词的海洋中遨游，领略中华文明的博大精深</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-content">
+              <h2>文化传承</h2>
+              <p>传承经典，弘扬国粹<br>让诗词走进生活，让文化融入血脉</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-content">
+              <h2>智慧碰撞</h2>
+              <p>才思敏捷，对答如流<br>看选手们如何在诗词的舞台上展现风采</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+        <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+        <div class="carousel-indicators">
+          <span class="indicator active" onclick="goToSlide(0)"></span>
+          <span class="indicator" onclick="goToSlide(1)"></span>
+          <span class="indicator" onclick="goToSlide(2)"></span>
+        </div>
+      </div>
+
+      <!-- 诗词推荐 -->
+      <section class="card-section">
+        <h2 class="section-title">诗词推荐</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>《静夜思》</h3>
+            <p>床前明月光，疑是地上霜。<br>举头望明月，低头思故乡。</p>
+            <p class="author">—— 唐 · 李白</p>
+          </div>
+          <div class="card">
+            <h3>《春晓》</h3>
+            <p>春眠不觉晓，处处闻啼鸟。<br>夜来风雨声，花落知多少。</p>
+            <p class="author">—— 唐 · 孟浩然</p>
+          </div>
+          <div class="card">
+            <h3>《登鹳雀楼》</h3>
+            <p>白日依山尽，黄河入海流。<br>欲穷千里目，更上一层楼。</p>
+            <p class="author">—— 唐 · 王之涣</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 节目介绍 -->
+      <section class="card-section">
+        <h2 class="section-title">节目介绍</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>关于节目</h3>
+            <p>《中国诗词大会》是央视首档全民参与的诗词节目，节目以"赏中华诗词、寻文化基因、品生活之美"为基本宗旨，力求通过对诗词知识的比拼及赏析，带动全民重温那些曾经学过的古诗词，分享诗词之美，感受诗词之趣。</p>
+          </div>
+          <div class="card">
+            <h3>比赛形式</h3>
+            <p>节目设置多个环节，包括个人追逐赛、飞花令、诗词接龙等。选手们需要在规定时间内回答与诗词相关的问题，展现自己的诗词储备和临场应变能力。比赛紧张刺激，精彩纷呈。</p>
+          </div>
+          <div class="card">
+            <h3>文化意义</h3>
+            <p>节目不仅是一场比赛，更是一次文化的传承与弘扬。通过电视媒体的传播，让更多观众了解诗词、喜爱诗词，从古人的智慧和情怀中汲取营养，涵养心灵，提升文化素养。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 精彩看点 -->
+      <section class="card-section">
+        <h2 class="section-title">精彩看点</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>飞花令</h3>
+            <p>飞花令是节目中最精彩的环节之一。选手们轮流说出含有指定字的诗句，考验的是选手的诗词储备量和反应速度。每一次飞花令都是一场智慧与才情的较量。</p>
+          </div>
+          <div class="card">
+            <h3>诗词接龙</h3>
+            <p>选手们以上一句诗的最后一个字作为下一句诗的开头，进行诗词接龙。这个环节不仅考验选手的记忆力，更考验对诗词的理解和运用能力。</p>
+          </div>
+          <div class="card">
+            <h3>画中诗</h3>
+            <p>根据图片猜测对应的诗词，将视觉艺术与文学艺术完美结合。选手们需要在短时间内从画面中提取信息，联想到对应的诗句。</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- 底部版权 -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">计算机科学与技术学院</p>
+      <p>班级：软件工程1班 | 学号：2024001 | 姓名：张三</p>
+      <p>&copy; 2024 中国诗词大会 版权所有</p>
+    </div>
+  </footer>
+
+  <script>
+    // 轮播图功能
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-item');
+    const indicators = document.querySelectorAll('.indicator');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+      const carousel = document.querySelector('.carousel-inner');
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+      
+      indicators.forEach((indicator, i) => {
+        indicator.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      showSlide(currentSlide);
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      showSlide(currentSlide);
+    }
+
+    // 自动轮播
+    setInterval(nextSlide, 5000);
+  </script>
+</body>
+</html>
