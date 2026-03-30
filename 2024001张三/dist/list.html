@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国诗词大会 - 列表页</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <div style="width:60px;height:60px;border-radius:50%;border:2px solid #FFD700;background:linear-gradient(135deg,#FFD700,#FFA500);display:flex;align-items:center;justify-content:center;font-size:24px;">诗</div>
+        <div>
+          <h1>中国诗词大会</h1>
+          <p>赏中华诗词，寻文化基因，品生活之美</p>
+        </div>
+      </div>
+      <a href="login.html" class="btn">登录</a>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul class="nav-menu">
+        <li><a href="index.html">首页</a></li>
+        <li>
+          <a href="list.html">节目季数</a>
+          <ul class="dropdown">
+            <li class="sub-dropdown">
+              <a href="list.html#season1">第一季</a>
+              <ul class="dropdown">
+                <li><a href="detail.html?id=1-1">第一期</a></li>
+                <li><a href="detail.html?id=1-2">第二期</a></li>
+                <li><a href="detail.html?id=1-3">第三期</a></li>
+              </ul>
+            </li>
+            <li class="sub-dropdown">
+              <a href="list.html#season2">第二季</a>
+              <ul class="dropdown">
+                <li><a href="detail.html?id=2-1">第一期</a></li>
+                <li><a href="detail.html?id=2-2">第二期</a></li>
+              </ul>
+            </li>
+            <li><a href="list.html#season3">第三季</a></li>
+            <li><a href="list.html#season4">第四季</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="list.html?type=poetry">经典诗词</a>
+          <ul class="dropdown">
+            <li><a href="list.html?type=poetry&cat=tang">唐诗</a></li>
+            <li><a href="list.html?type=poetry&cat=song">宋词</a></li>
+            <li><a href="list.html?type=poetry&cat=other">其他</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="list.html?type=player">选手风采</a>
+          <ul class="dropdown">
+            <li><a href="detail.html?player=1">冠军风采</a></li>
+            <li><a href="detail.html?player=2">优秀选手</a></li>
+          </ul>
+        </li>
+        <li><a href="login.html">会员登录</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="index.html">首页</a>
+      <span>></span>
+      <span id="breadcrumbCurrent">列表页</span>
+    </div>
+
+    <section class="section" id="seasonSection">
+      <h2 class="section-title">节目季数</h2>
+      <div class="card-grid">
+        <div class="card" id="season1">
+          <div class="card-image" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">一</div>
+          <div class="card-content">
+            <h3 class="card-title">第一季</h3>
+            <p class="card-text">2016年播出，共10期节目</p>
+            <p class="card-text">冠军：梁爽</p>
+            <a href="detail.html?season=1" class="card-link">查看详情 →</a>
+          </div>
+        </div>
+        <div class="card" id="season2">
+          <div class="card-image" style="background: linear-gradient(135deg, #3498db, #2980b9);">二</div>
+          <div class="card-content">
+            <h3 class="card-title">第二季</h3>
+            <p class="card-text">2017年播出，共10期节目</p>
+            <p class="card-text">冠军：武亦姝</p>
+            <a href="detail.html?season=2" class="card-link">查看详情 →</a>
+          </div>
+        </div>
+        <div class="card" id="season3">
+          <div class="card-image" style="background: linear-gradient(135deg, #2ecc71, #27ae60);">三</div>
+          <div class="card-content">
+            <h3 class="card-title">第三季</h3>
+            <p class="card-text">2018年播出，共10期节目</p>
+            <p class="card-text">冠军：雷海为</p>
+            <a href="detail.html?season=3" class="card-link">查看详情 →</a>
+          </div>
+        </div>
+        <div class="card" id="season4">
+          <div class="card-image" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">四</div>
+          <div class="card-content">
+            <h3 class="card-title">第四季</h3>
+            <p class="card-text">2019年播出，共10期节目</p>
+            <p class="card-text">冠军：陈更</p>
+            <a href="detail.html?season=4" class="card-link">查看详情 →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="poetrySection">
+      <h2 class="section-title">经典诗词</h2>
+      <ul class="poetry-list">
+        <li class="poetry-item">
+          <h3 class="poetry-title">将进酒</h3>
+          <p class="poetry-author">李白 · 唐代</p>
+          <p class="poetry-content">君不见黄河之水天上来，奔流到海不复回。君不见高堂明镜悲白发，朝如青丝暮成雪...</p>
+          <a href="detail.html?poem=4" class="card-link">查看详情 →</a>
+        </li>
+        <li class="poetry-item">
+          <h3 class="poetry-title">念奴娇·赤壁怀古</h3>
+          <p class="poetry-author">苏轼 · 宋代</p>
+          <p class="poetry-content">大江东去，浪淘尽，千古风流人物。故垒西边，人道是，三国周郎赤壁...</p>
+          <a href="detail.html?poem=5" class="card-link">查看详情 →</a>
+        </li>
+        <li class="poetry-item">
+          <h3 class="poetry-title">登高</h3>
+          <p class="poetry-author">杜甫 · 唐代</p>
+          <p class="poetry-content">风急天高猿啸哀，渚清沙白鸟飞回。无边落木萧萧下，不尽长江滚滚来...</p>
+          <a href="detail.html?poem=6" class="card-link">查看详情 →</a>
+        </li>
+        <li class="poetry-item">
+          <h3 class="poetry-title">虞美人·春花秋月何时了</h3>
+          <p class="poetry-author">李煜 · 五代</p>
+          <p class="poetry-content">春花秋月何时了？往事知多少。小楼昨夜又东风，故国不堪回首月明中...</p>
+          <a href="detail.html?poem=7" class="card-link">查看详情 →</a>
+        </li>
+        <li class="poetry-item">
+          <h3 class="poetry-title">沁园春·雪</h3>
+          <p class="poetry-author">毛泽东 · 现代</p>
+          <p class="poetry-content">北国风光，千里冰封，万里雪飘。望长城内外，惟余莽莽；大河上下，顿失滔滔...</p>
+          <a href="detail.html?poem=8" class="card-link">查看详情 →</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="playerSection">
+      <h2 class="section-title">选手风采</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-image" style="background: linear-gradient(135deg, #f1c40f, #f39c12);">👑</div>
+          <div class="card-content">
+            <h3 class="card-title">武亦姝</h3>
+            <p class="card-text">第二季冠军，来自上海复旦附中，以"飞花令"一战成名。</p>
+            <a href="detail.html?player=wuyishu" class="card-link">查看详情 →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="background: linear-gradient(135deg, #e67e22, #d35400);">🌟</div>
+          <div class="card-content">
+            <h3 class="card-title">雷海为</h3>
+            <p class="card-text">第三季冠军，外卖小哥逆袭夺冠，感动无数观众。</p>
+            <a href="detail.html?player=leihaiwei" class="card-link">查看详情 →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="background: linear-gradient(135deg, #1abc9c, #16a085);">📚</div>
+          <div class="card-content">
+            <h3 class="card-title">陈更</h3>
+            <p class="card-text">第四季冠军，北大博士，连续四季参赛终获冠军。</p>
+            <a href="detail.html?player=chengeng" class="card-link">查看详情 →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© 2024 中国诗词大会官方网站</p>
+      <p>班级：计算机2401班 | 学号：2024001 | 姓名：张三</p>
+      <p>本站仅供学习交流使用</p>
+    </div>
+  </footer>
+
+  <script>
+    function getQueryParams() {
+      const params = new URLSearchParams(window.location.search);
+      return {
+        type: params.get('type'),
+        cat: params.get('cat')
+      };
+    }
+
+    function handlePageDisplay() {
+      const { type, cat } = getQueryParams();
+      const seasonSection = document.getElementById('seasonSection');
+      const poetrySection = document.getElementById('poetrySection');
+      const playerSection = document.getElementById('playerSection');
+      const breadcrumb = document.getElementById('breadcrumbCurrent');
+
+      seasonSection.style.display = 'none';
+      poetrySection.style.display = 'none';
+      playerSection.style.display = 'none';
+
+      if (type === 'poetry') {
+        poetrySection.style.display = 'block';
+        breadcrumb.textContent = cat ? `经典诗词 - ${cat === 'tang' ? '唐诗' : cat === 'song' ? '宋词' : '其他'}` : '经典诗词';
+      } else if (type === 'player') {
+        playerSection.style.display = 'block';
+        breadcrumb.textContent = '选手风采';
+      } else {
+        seasonSection.style.display = 'block';
+        breadcrumb.textContent = '节目季数';
+      }
+
+      const hash = window.location.hash;
+      if (hash) {
+        setTimeout(() => {
+          const element = document.querySelector(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      }
+    }
+
+    handlePageDisplay();
+  </script>
+</body>
+</html>

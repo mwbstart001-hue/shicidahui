@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国诗词大会 - 详情页</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <div style="width:60px;height:60px;border-radius:50%;border:2px solid #FFD700;background:linear-gradient(135deg,#FFD700,#FFA500);display:flex;align-items:center;justify-content:center;font-size:24px;">诗</div>
+        <div>
+          <h1>中国诗词大会</h1>
+          <p>赏中华诗词，寻文化基因，品生活之美</p>
+        </div>
+      </div>
+      <a href="login.html" class="btn">登录</a>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul class="nav-menu">
+        <li><a href="index.html">首页</a></li>
+        <li>
+          <a href="list.html">节目季数</a>
+          <ul class="dropdown">
+            <li class="sub-dropdown">
+              <a href="list.html#season1">第一季</a>
+              <ul class="dropdown">
+                <li><a href="detail.html?id=1-1">第一期</a></li>
+                <li><a href="detail.html?id=1-2">第二期</a></li>
+                <li><a href="detail.html?id=1-3">第三期</a></li>
+              </ul>
+            </li>
+            <li class="sub-dropdown">
+              <a href="list.html#season2">第二季</a>
+              <ul class="dropdown">
+                <li><a href="detail.html?id=2-1">第一期</a></li>
+                <li><a href="detail.html?id=2-2">第二期</a></li>
+              </ul>
+            </li>
+            <li><a href="list.html#season3">第三季</a></li>
+            <li><a href="list.html#season4">第四季</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="list.html?type=poetry">经典诗词</a>
+          <ul class="dropdown">
+            <li><a href="list.html?type=poetry&cat=tang">唐诗</a></li>
+            <li><a href="list.html?type=poetry&cat=song">宋词</a></li>
+            <li><a href="list.html?type=poetry&cat=other">其他</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="list.html?type=player">选手风采</a>
+          <ul class="dropdown">
+            <li><a href="detail.html?player=1">冠军风采</a></li>
+            <li><a href="detail.html?player=2">优秀选手</a></li>
+          </ul>
+        </li>
+        <li><a href="login.html">会员登录</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="index.html">首页</a>
+      <span>></span>
+      <a href="list.html">列表页</a>
+      <span>></span>
+      <span id="breadcrumbCurrent">详情页</span>
+    </div>
+
+    <section class="section" id="contentSection">
+      <div class="detail-header">
+        <h1 class="detail-title" id="detailTitle">加载中...</h1>
+        <p class="detail-meta" id="detailMeta"></p>
+      </div>
+      <div class="detail-content" id="detailContent">
+      </div>
+    </section>
+
+    <section class="section" style="margin-top: 30px;">
+      <h2 class="section-title">相关推荐</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-image">诗</div>
+          <div class="card-content">
+            <h3 class="card-title">更多诗词</h3>
+            <p class="card-text">探索更多经典诗词作品</p>
+            <a href="list.html?type=poetry" class="card-link">查看详情 →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="background: linear-gradient(135deg, #3498db, #2980b9);">季</div>
+          <div class="card-content">
+            <h3 class="card-title">节目季数</h3>
+            <p class="card-text">查看各季精彩内容</p>
+            <a href="list.html" class="card-link">查看详情 →</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="background: linear-gradient(135deg, #2ecc71, #27ae60);">人</div>
+          <div class="card-content">
+            <h3 class="card-title">选手风采</h3>
+            <p class="card-text">了解优秀选手故事</p>
+            <a href="list.html?type=player" class="card-link">查看详情 →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© 2024 中国诗词大会官方网站</p>
+      <p>班级：计算机2401班 | 学号：2024001 | 姓名：张三</p>
+      <p>本站仅供学习交流使用</p>
+    </div>
+  </footer>
+
+  <script>
+    const poetryData = {
+      1: {
+        title: '静夜思',
+        author: '李白 · 唐代',
+        content: `<p>床前明月光，疑是地上霜。</p>
+                  <p>举头望明月，低头思故乡。</p>
+                  <p><strong>【赏析】</strong></p>
+                  <p>这首诗写的是在寂静的月夜思念家乡的感受。诗的前两句，是写诗人在作客他乡的特定环境中一刹那间所产生的错觉。一个独处他乡的人，白天奔波忙碌，倒还能冲淡离愁，然而一到夜深人静的时候，心头就难免泛起阵阵思念故乡的波澜。</p>
+                  <p>诗的后两句，则是通过动作神态的刻画，深化思乡之情。"望"字照应了前句的"疑"字，表明诗人已从迷朦转为清醒，他翘首凝望着月亮，不禁想起，此刻他的故乡也正处在这轮明月的照耀下，于是自然引出了"低头思故乡"的结句。</p>`
+      },
+      2: {
+        title: '春晓',
+        author: '孟浩然 · 唐代',
+        content: `<p>春眠不觉晓，处处闻啼鸟。</p>
+                  <p>夜来风雨声，花落知多少。</p>
+                  <p><strong>【赏析】</strong></p>
+                  <p>这首诗是诗人隐居在鹿门山时所作，意境十分优美。诗人抓住春天的早晨刚刚醒来时的一瞬间展开描写和联想，生动地表达了诗人对春天的热爱和怜惜之情。</p>
+                  <p>全诗语言平易浅近，自然天成，言浅意浓，景真情真，深得大自然的真趣。从听觉角度描写春天的早晨，描绘了一幅春天早晨绚丽的图景，抒发了诗人热爱春天、珍惜春光的美好心情。`
+      },
+      3: {
+        title: '水调歌头·明月几时有',
+        author: '苏轼 · 宋代',
+        content: `<p>明月几时有？把酒问青天。不知天上宫阙，今夕是何年。我欲乘风归去，又恐琼楼玉宇，高处不胜寒。起舞弄清影，何似在人间。</p>
+                  <p>转朱阁，低绮户，照无眠。不应有恨，何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共婵娟。</p>
+                  <p><strong>【赏析】</strong></p>
+                  <p>此词是中秋望月怀人之作，表达了对胞弟苏辙的无限思念。丙辰中秋，欢饮达旦，大醉，作此篇，兼怀子由。词人运用形象描绘手法，勾勒出一种皓月当空、亲人千里、孤高旷远的境界氛围。</p>`
+      },
+      4: {
+        title: '将进酒',
+        author: '李白 · 唐代',
+        content: `<p>君不见黄河之水天上来，奔流到海不复回。</p>
+                  <p>君不见高堂明镜悲白发，朝如青丝暮成雪。</p>
+                  <p>人生得意须尽欢，莫使金樽空对月。</p>
+                  <p>天生我材必有用，千金散尽还复来。</p>
+                  <p>烹羊宰牛且为乐，会须一饮三百杯。</p>
+                  <p>岑夫子，丹丘生，将进酒，杯莫停。</p>
+                  <p>与君歌一曲，请君为我倾耳听。</p>
+                  <p>钟鼓馔玉不足贵，但愿长醉不复醒。</p>
+                  <p>古来圣贤皆寂寞，惟有饮者留其名。</p>
+                  <p>陈王昔时宴平乐，斗酒十千恣欢谑。</p>
+                  <p>主人何为言少钱，径须沽取对君酌。</p>
+                  <p>五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。</p>
+                  <p><strong>【赏析】</strong></p>
+                  <p>《将进酒》是唐代大诗人李白沿用乐府古题创作的诗篇。此诗为李白长安放还以后所作，思想内容非常深沉，艺术表现非常成熟，在同题作品中影响最大。诗人豪饮高歌，借酒消愁，抒发了忧愤深广的人生感慨。</p>`
+      },
+      5: {
+        title: '念奴娇·赤壁怀古',
+        author: '苏轼 · 宋代',
+        content: `<p>大江东去，浪淘尽，千古风流人物。</p>
+                  <p>故垒西边，人道是，三国周郎赤壁。</p>
+                  <p>乱石穿空，惊涛拍岸，卷起千堆雪。</p>
+                  <p>江山如画，一时多少豪杰。</p>
+                  <p>遥想公瑾当年，小乔初嫁了，雄姿英发。</p>
+                  <p>羽扇纶巾，谈笑间，樯橹灰飞烟灭。</p>
+                  <p>故国神游，多情应笑我，早生华发。</p>
+                  <p>人生如梦，一尊还酹江月。</p>
+                  <p><strong>【赏析】</strong></p>
+                  <p>此词通过对月夜江上壮美景色的描绘，借对古代战场的凭吊和对风流人物才略、气度、功业的追念，曲折地表达了作者怀才不遇、功业未就、老大未成的忧愤之情，同时表现了作者关注历史和人生的旷达之心。</p>`
+      }
+    };
+
+    const seasonData = {
+      1: {
+        title: '第一季节目详情',
+        author: '2016年播出',
+        content: `<p>《中国诗词大会》第一季于2016年春节期间在中央电视台综合频道、科教频道播出，共10期节目。</p>
+                  <p>本季节目由董卿主持，康震、蒙曼、郦波、王立群担任嘉宾。节目以"赏中华诗词、寻文化基因、品生活之美"为基本宗旨，力求通过对诗词知识的比拼及赏析，带动全民重温那些曾经学过的古诗词。</p>
+                  <p><strong>冠军：梁爽</strong></p>
+                  <p>梁爽来自上海，是一位诗词爱好者，凭借扎实的诗词功底和稳定的发挥，最终夺得第一季总冠军。</p>`
+      },
+      2: {
+        title: '第二季节目详情',
+        author: '2017年播出',
+        content: `<p>《中国诗词大会》第二季于2017年春节期间播出，延续了第一季的热度，收视率再创新高。</p>
+                  <p>本季节目涌现出许多优秀的选手，其中最引人注目的是来自上海复旦附中的武亦姝同学。</p>
+                  <p><strong>冠军：武亦姝</strong></p>
+                  <p>武亦姝，2001年出生，上海复旦附中高一学生。在第二季总决赛中，她以出色的表现夺得冠军，成为最年轻的诗词大会冠军。她在"飞花令"环节的精彩表现，让无数观众为之惊叹。</p>`
+      },
+      3: {
+        title: '第三季节目详情',
+        author: '2018年播出',
+        content: `<p>《中国诗词大会》第三季于2018年春节期间播出，本季节目最大的亮点是外卖小哥雷海为的逆袭夺冠。</p>
+                  <p><strong>冠军：雷海为</strong></p>
+                  <p>雷海为，1981年出生，湖南人，杭州外卖配送员。他利用送外卖的间隙背诵诗词，最终凭借对诗词的热爱和坚持，在第三季总决赛中击败北大硕士彭敏，夺得冠军，感动了无数观众。</p>
+                  <p>他的故事告诉我们：诗词不分职业，热爱可抵岁月漫长。</p>`
+      },
+      4: {
+        title: '第四季节目详情',
+        author: '2019年播出',
+        content: `<p>《中国诗词大会》第四季于2019年春节期间播出，本季节目见证了陈更的圆梦时刻。</p>
+                  <p><strong>冠军：陈更</strong></p>
+                  <p>陈更，北京大学博士研究生，连续四季参加诗词大会，终于在第四季夺得冠军。她的坚持和执着，展现了诗词爱好者的精神风貌。</p>
+                  <p>陈更在获奖感言中说："诗词让我看到了更大的世界，也让我成为了更好的自己。"</p>`
+      }
+    };
+
+    const playerData = {
+      wuyishu: {
+        title: '武亦姝 - 第二季冠军',
+        author: '诗词才女',
+        content: `<p>武亦姝，2001年出生于上海，毕业于复旦大学附属中学。</p>
+                  <p><strong>主要成就：</strong></p>
+                  <p>2017年《中国诗词大会》第二季总冠军，被誉为"诗词才女"。</p>
+                  <p><strong>经典表现：</strong></p>
+                  <p>在"飞花令"环节，武亦姝以"月"字为题，连续说出多句带"月"字的诗词，展现了惊人的诗词储备量。她的从容淡定和深厚功底，让评委和观众都为之折服。</p>
+                  <p><strong>人物评价：</strong></p>
+                  <p>康震教授评价她："武亦姝身上有一种古典美，她的诗词功底扎实，而且非常有气质。"</p>`
+      },
+      leihaiwei: {
+        title: '雷海为 - 第三季冠军',
+        author: '外卖诗人',
+        content: `<p>雷海为，1981年出生于湖南，杭州外卖配送员。</p>
+                  <p><strong>主要成就：</strong></p>
+                  <p>2018年《中国诗词大会》第三季总冠军，被誉为"外卖诗人"。</p>
+                  <p><strong>励志故事：</strong></p>
+                  <p>雷海为在送外卖的间隙背诵诗词，利用等餐、等红绿灯的时间学习。他说："诗词给了我力量，让我在平凡的生活中找到了诗意。"</p>
+                  <p>夺冠后，雷海为的故事感动了无数人，证明了诗词不分职业，热爱可抵岁月漫长。</p>`
+      },
+      chengeng: {
+        title: '陈更 - 第四季冠军',
+        author: '北大博士',
+        content: `<p>陈更，北京大学博士研究生，研究方向为工业设计。</p>
+                  <p><strong>主要成就：</strong></p>
+                  <p>连续四季参加《中国诗词大会》，最终在第四季夺得总冠军。</p>
+                  <p><strong>诗词之路：</strong></p>
+                  <p>陈更从第一季就开始参加诗词大会，虽然多次与冠军擦肩而过，但她从未放弃。她说："诗词让我看到了更大的世界，也让我成为了更好的自己。"</p>
+                  <p>她的坚持和执着，展现了诗词爱好者的精神风貌，也激励了更多人热爱诗词。</p>`
+      }
+    };
+
+    function getQueryParams() {
+      const params = new URLSearchParams(window.location.search);
+      return {
+        poem: params.get('poem'),
+        season: params.get('season'),
+        player: params.get('player'),
+        id: params.get('id')
+      };
+    }
+
+    function displayContent() {
+      const { poem, season, player, id } = getQueryParams();
+      const titleEl = document.getElementById('detailTitle');
+      const metaEl = document.getElementById('detailMeta');
+      const contentEl = document.getElementById('detailContent');
+      const breadcrumb = document.getElementById('breadcrumbCurrent');
+
+      let data = null;
+      let breadcrumbText = '详情页';
+
+      if (poem && poetryData[poem]) {
+        data = poetryData[poem];
+        breadcrumbText = data.title;
+      } else if (season && seasonData[season]) {
+        data = seasonData[season];
+        breadcrumbText = data.title;
+      } else if (player && playerData[player]) {
+        data = playerData[player];
+        breadcrumbText = data.title;
+      } else if (id) {
+        data = {
+          title: `节目第 ${id} 期`,
+          author: '中国诗词大会',
+          content: `<p>这是《中国诗词大会》第 ${id} 期的详细内容。</p>
+                    <p>本期节目精彩纷呈，选手们展现了深厚的诗词功底，为观众带来了一场诗词盛宴。</p>
+                    <p>节目包含多个环节：</p>
+                    <p>1. 个人追逐赛：选手依次答题，争夺晋级资格</p>
+                    <p>2. 飞花令：选手轮流说出含有特定字的诗词</p>
+                    <p>3. 决胜局：最终对决，决出本期冠军</p>`
+        };
+        breadcrumbText = data.title;
+      } else {
+        data = poetryData[1];
+        breadcrumbText = data.title;
+      }
+
+      titleEl.textContent = data.title;
+      metaEl.textContent = data.author;
+      contentEl.innerHTML = data.content;
+      breadcrumb.textContent = breadcrumbText;
+    }
+
+    displayContent();
+  </script>
+</body>
+</html>
