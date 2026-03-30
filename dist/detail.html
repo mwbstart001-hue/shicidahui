@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>诗词详情 — 中国诗词大会</title>
+  <meta name="description" content="中国诗词大会诗词详情页，包含全文、注释与赏析。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══ 头部 ══════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-poster">🏮</div>
+      <div class="header-text">
+        <h1 class="header-title">中国诗词大会</h1>
+        <p class="header-subtitle">CHINESE POETRY COMPETITION · CCTV 大型文化类竞赛节目</p>
+      </div>
+      <span class="header-badge">第十季 播出中</span>
+    </div>
+  </header>
+
+  <!-- ══ 导航 ══════════════════════════════════════════ -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <div class="nav-item">
+        <a href="index.html" class="nav-link">🏠 首页</a>
+      </div>
+      <div class="nav-item">
+        <a href="list.html" class="nav-link active">
+          📚 诗词大全 <span class="nav-arrow">▾</span>
+        </a>
+        <div class="nav-dropdown">
+          <a href="list.html?type=tang">唐诗精选</a>
+          <a href="list.html?type=song">宋词名篇</a>
+          <a href="list.html?type=yuan">元曲欣赏</a>
+          <a href="list.html?type=modern">现代诗词</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="list.html" class="nav-link">
+          🎬 历届回顾 <span class="nav-arrow">▾</span>
+        </a>
+        <div class="nav-dropdown">
+          <a href="detail.html?id=season10">第十季</a>
+          <a href="detail.html?id=season9">第九季</a>
+          <a href="detail.html?id=season8">第八季</a>
+          <a href="list.html">查看全部</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="list.html#players" class="nav-link">🏆 选手风采</a>
+      </div>
+      <div class="nav-item">
+        <a href="login.html" class="nav-link">🔑 登录</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ 面包屑导航 ════════════════════════════════ -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">首页</a>
+      <span>›</span>
+      <a href="list.html">诗词大全</a>
+      <span>›</span>
+      <span id="bc-title">诗词详情</span>
+    </div>
+  </div>
+
+  <!-- ══ 详情主体 ════════════════════════════════════ -->
+  <main class="detail-wrap" id="detail-wrap">
+
+    <div class="detail-header">
+      <span class="detail-badge" id="detail-type">唐诗</span>
+      <h1 class="detail-title" id="detail-title">静夜思</h1>
+      <div class="detail-meta">
+        <span>✒️ <span id="detail-author">李白</span></span>
+        <span>📅 <span id="detail-dynasty">唐代</span></span>
+        <span>📖 <span id="detail-form">五言绝句</span></span>
+      </div>
+    </div>
+
+    <hr class="detail-divider">
+
+    <!-- 诗词全文 -->
+    <div class="detail-poem">
+      <div class="detail-poem-lines" id="detail-poem-lines">
+        床前明月光，<br>疑是地上霜。<br>举头望明月，<br>低头思故乡。
+      </div>
+    </div>
+
+    <!-- 注释 -->
+    <div class="detail-annotation">
+      <h3>📝 注释</h3>
+      <p id="detail-note">疑：怀疑，以为。举头：抬头。故乡：指远离的家乡。全诗以白描手法，勾勒出一幅月夜思乡图，意境深远，情感真挚。</p>
+    </div>
+
+    <!-- 赏析 -->
+    <div class="detail-analysis" id="detail-analysis">
+      <p>这是李白脍炙人口的名篇，写游子思乡之情。诗人用比喻手法，将明月光比作地上的霜，营造出清冷孤寂的氛围。</p>
+      <p>全诗短短四句，不假装饰，却情真意切，自然流畅。"举头"与"低头"两个动作，简洁地表达出诗人看月思乡的情感流动，是中国古典诗歌中思乡之作的典范。</p>
+      <p>这首诗在中国诗词大会中多次出现，常被用于考察选手对五言绝句的掌握程度，以其普及度高、情感深厚而著称。</p>
+    </div>
+
+    <!-- 相关推荐 -->
+    <div class="related-section">
+      <h3>📖 相关推荐</h3>
+      <div class="related-grid" id="related-grid">
+        <a href="detail.html?id=5" class="related-item">
+          <div class="related-item-title">登鹳雀楼</div>
+          <div class="related-item-author">王之涣 · 唐代</div>
+        </a>
+        <a href="detail.html?id=2" class="related-item">
+          <div class="related-item-title">水调歌头·明月几时有</div>
+          <div class="related-item-author">苏轼 · 宋代</div>
+        </a>
+        <a href="detail.html?id=3" class="related-item">
+          <div class="related-item-title">春望</div>
+          <div class="related-item-author">杜甫 · 唐代</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 返回按钮 -->
+    <div style="margin-top:48px;text-align:center;">
+      <a href="list.html" style="display:inline-block;padding:12px 36px;background:var(--red);color:#fff;border-radius:24px;font-family:'Noto Sans SC',sans-serif;font-weight:700;transition:opacity .3s;">← 返回列表</a>
+    </div>
+
+  </main>
+
+  <!-- ══ 底部 ══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>🏮 中国诗词大会</h4>
+        <p>赏中华诗词，寻文化基因，品生活之美。让诗词之光照亮我们的心灵。</p>
+      </div>
+      <div class="footer-col">
+        <h4>快速导航</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="list.html">诗词大全</a></li>
+          <li><a href="detail.html?id=1">内容详情</a></li>
+          <li><a href="login.html">登录</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>诗词分类</h4>
+        <ul>
+          <li><a href="list.html?type=tang">唐诗</a></li>
+          <li><a href="list.html?type=song">宋词</a></li>
+          <li><a href="list.html?type=yuan">元曲</a></li>
+          <li><a href="list.html">更多分类</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <span>班级：7002</span>|<span>学号：60</span>|<span>姓名：同学</span>
+      <br>© 2026 中国诗词大会 · 仅供学习使用
+    </div>
+  </footer>
+
+  <!-- ══ 详情数据 JS ════════════════════════════════ -->
+  <script>
+    (function () {
+      // 诗词数据库
+      const POEMS = {
+        '1': {
+          type:'唐诗', title:'静夜思', author:'李白', dynasty:'唐代', form:'五言绝句',
+          lines:'床前明月光，<br>疑是地上霜。<br>举头望明月，<br>低头思故乡。',
+          note:'疑：怀疑，以为。举头：抬头。故乡：指远离的家乡。全诗以白描手法，勾勒出一幅月夜思乡图。',
+          analysis:'这是李白脍炙人口的名篇，写游子思乡之情。诗人用比喻手法，将明月光比作地上的霜，营造出清冷孤寂的氛围。<br><br>全诗短短四句，不假装饰，却情真意切，自然流畅。"举头"与"低头"两个动作，简洁地表达出诗人看月思乡的情感流动，是中国古典诗歌中思乡之作的典范。',
+          related:[{id:5,title:'登鹳雀楼',author:'王之涣·唐代'},{id:2,title:'水调歌头',author:'苏轼·宋代'},{id:3,title:'春望',author:'杜甫·唐代'}]
+        },
+        '2': {
+          type:'宋词', title:'水调歌头·明月几时有', author:'苏轼', dynasty:'宋代', form:'词·豪放派',
+          lines:'明月几时有？把酒问青天。<br>不知天上宫阙，今夕是何年。<br>我欲乘风归去，又恐琼楼玉宇，<br>高处不胜寒。<br>起舞弄清影，何似在人间。<br><br>转朱阁，低绮户，照无眠。<br>不应有恨，何事长向别时圆？<br>人有悲欢离合，月有阴晴圆缺，<br>此事古难全。<br>但愿人长久，千里共婵娟。',
+          note:'婵娟：指月亮。把酒：举起酒杯。宫阙：宫殿。绮户：华丽的窗户。',
+          analysis:'此词作于宋神宗熙宁九年（1076年）中秋，苏轼与弟苏辙分别七年未见，因中秋赏月思念，遂作此词。<br><br>上阕问天，探讨宇宙，下阕问月，抒发情怀。"但愿人长久，千里共婵娟"已成千古名句，表达了词人对远方亲人的深切思念与美好祝愿，意境开阔，情感深沉。',
+          related:[{id:4,title:'如梦令',author:'李清照·宋代'},{id:8,title:'满江红',author:'岳飞·宋代'},{id:1,title:'静夜思',author:'李白·唐代'}]
+        },
+        '3': {
+          type:'唐诗', title:'春望', author:'杜甫', dynasty:'唐代', form:'五言律诗',
+          lines:'国破山河在，城春草木深。<br>感时花溅泪，恨别鸟惊心。<br>烽火连三月，家书抵万金。<br>白头搔更短，浑欲不胜簪。',
+          note:'烽火：战火、战乱。家书：家信。簪：古代用来固定头发的饰品。浑欲：简直就要。',
+          analysis:'此诗写于安史之乱中，杜甫身陷长安，目睹国破家亡的惨状，悲痛万分，写下这首忧国忧民的名作。<br><br>"感时花溅泪，恨别鸟惊心"是千古名句，以乐景衬哀情，花鸟本是美好之物，因国破家亡而令人黯然神伤，情景交融，深刻表达了诗人的爱国情怀。',
+          related:[{id:1,title:'静夜思',author:'李白·唐代'},{id:5,title:'登鹳雀楼',author:'王之涣·唐代'},{id:7,title:'望庐山瀑布',author:'李白·唐代'}]
+        },
+        '4': {
+          type:'宋词', title:'如梦令', author:'李清照', dynasty:'宋代', form:'词·婉约派',
+          lines:'常记溪亭日暮，<br>沉醉不知归路。<br>兴尽晚回舟，<br>误入藕花深处。<br>争渡，争渡，<br>惊起一滩鸥鹭。',
+          note:'溪亭：溪边亭子。藕花：荷花。争渡：奋力划桨。鸥鹭：水鸟。',
+          analysis:'这是李清照少女时期的词作，描写了一次郊游饮酒后迷路的趣味经历。语言活泼轻快，充满生活情趣。<br><br>"争渡，争渡，惊起一滩鸥鹭"一句，动感十足，将少女慌张划船、惊起鸟群的场景描绘得栩栩如生，展现出词人早年无忧无虑的美好时光。',
+          related:[{id:2,title:'水调歌头',author:'苏轼·宋代'},{id:8,title:'满江红',author:'岳飞·宋代'},{id:6,title:'天净沙·秋思',author:'马致远·元代'}]
+        },
+        '5': {
+          type:'唐诗', title:'登鹳雀楼', author:'王之涣', dynasty:'唐代', form:'五言绝句',
+          lines:'白日依山尽，<br>黄河入海流。<br>欲穷千里目，<br>更上一层楼。',
+          note:'鹳雀楼：古楼名，在今山西省永济市。欲穷：想要看尽。',
+          analysis:'这首诗写于诗人登鹳雀楼时的所见所感。前两句写景，气势磅礴；后两句抒发哲理，意味深长。<br><br>"欲穷千里目，更上一层楼"已成为激励人们积极进取、不断超越自我的千古名言，至今仍广为引用，激励着无数人向更高目标迈进。',
+          related:[{id:1,title:'静夜思',author:'李白·唐代'},{id:7,title:'望庐山瀑布',author:'李白·唐代'},{id:3,title:'春望',author:'杜甫·唐代'}]
+        },
+        '6': {
+          type:'元曲', title:'天净沙·秋思', author:'马致远', dynasty:'元代', form:'散曲·小令',
+          lines:'枯藤老树昏鸦，<br>小桥流水人家，<br>古道西风瘦马。<br>夕阳西下，<br>断肠人在天涯。',
+          note:'枯藤：干枯的藤蔓。昏鸦：黄昏时的乌鸦。天涯：极远的地方，此指异乡他处。断肠：形容极度悲痛或思念。',
+          analysis:'此曲被称为"秋思之祖"，仅用28个字，描绘了枯藤、老树、昏鸦、小桥、流水、人家、古道、西风、瘦马九种意象，最后点题"断肠人在天涯"。<br><br>全曲没有一个"秋"字，却将深秋傍晚的萧瑟景象和羁旅他乡的游子哀愁，展现得淋漓尽致，意境高远，被誉为元散曲中的绝品。',
+          related:[{id:4,title:'如梦令',author:'李清照·宋代'},{id:9,title:'再别康桥',author:'徐志摩·现代'},{id:2,title:'水调歌头',author:'苏轼·宋代'}]
+        },
+        '7': {
+          type:'唐诗', title:'望庐山瀑布', author:'李白', dynasty:'唐代', form:'七言绝句',
+          lines:'日照香炉生紫烟，<br>遥看瀑布挂前川。<br>飞流直下三千尺，<br>疑是银河落九天。',
+          note:'香炉：庐山中的香炉峰。紫烟：日光照射水雾呈紫色。九天：极高的天空。',
+          analysis:'李白以夸张浪漫的笔法，将庐山瀑布的壮观景象描绘得气势磅礴。"飞流直下三千尺"用数字夸张，极言瀑布之高；"疑是银河落九天"以比喻作结，想象瑰奇。<br><br>全诗色彩绚丽，气势雄浑，充分体现了李白诗歌豪放飘逸的浪漫主义风格，是描写自然景观的杰作。',
+          related:[{id:1,title:'静夜思',author:'李白·唐代'},{id:5,title:'登鹳雀楼',author:'王之涣·唐代'},{id:3,title:'春望',author:'杜甫·唐代'}]
+        },
+        '8': {
+          type:'宋词', title:'满江红·怒发冲冠', author:'岳飞', dynasty:'宋代', form:'词·爱国',
+          lines:'怒发冲冠，凭栏处，潇潇雨歇。<br>抬望眼，仰天长啸，壮怀激烈。<br>三十功名尘与土，八千里路云和月。<br>莫等闲，白了少年头，空悲切！<br><br>靖康耻，犹未雪；臣子恨，何时灭？<br>驾长车，踏破贺兰山缺。<br>壮志饥餐胡虏肉，笑谈渴饮匈奴血。<br>待从头，收拾旧山河，朝天阙。',
+          note:'怒发冲冠：气得头发竖起。靖康耻：靖康之变，北宋的耻辱。贺兰山：山名，在今宁夏。天阙：京城的宫殿。',
+          analysis:'这是岳飞的代表作，全词充满了岳飞的爱国精神和报国志愿，气势磅礴，豪情万丈。<br><br>"莫等闲，白了少年头，空悲切"激励人们珍惜时光，奋发向上；"待从头，收拾旧山河，朝天阙"则表达了岳飞收复山河、精忠报国的坚定信念，至今读来仍令人热血沸腾。',
+          related:[{id:2,title:'水调歌头',author:'苏轼·宋代'},{id:4,title:'如梦令',author:'李清照·宋代'},{id:3,title:'春望',author:'杜甫·唐代'}]
+        },
+        '9': {
+          type:'现代诗', title:'再别康桥', author:'徐志摩', dynasty:'现代', form:'现代诗',
+          lines:'轻轻的我走了，<br>正如我轻轻的来；<br>我轻轻的招手，<br>作别西天的云彩。<br><br>那河畔的金柳，<br>是夕阳中的新娘；<br>波光里的艳影，<br>在我的心头荡漾。<br><br>悄悄的我走了，<br>正如我悄悄的来；<br>我挥一挥衣袖，<br>不带走一片云彩。',
+          note:'康桥：英国剑桥大学所在地，徐志摩曾在此求学。金柳：河边柳树因夕阳映照而呈金色。',
+          analysis:'《再别康桥》是徐志摩最脍炙人口的诗篇，写于1928年诗人第三次旅游英国时，重游剑桥，有感而发。<br><br>全诗以"轻轻的""悄悄的"贯穿始终，营造出离别时依依不舍的氛围。金柳、青荇、潭水等意象，将康桥的美景与诗人的依恋情感完美融合，被誉为新月派诗歌的代表作。',
+          related:[{id:6,title:'天净沙·秋思',author:'马致远·元代'},{id:4,title:'如梦令',author:'李清照·宋代'},{id:1,title:'静夜思',author:'李白·唐代'}]
+        },
+        'season10': {
+          type:'节目季', title:'第十季回顾', author:'CCTV制作组', dynasty:'2026年', form:'电视节目',
+          lines:'春风送暖入屠苏，<br>千古诗词今再续。<br>华夏文明耀九州，<br>诗词大会第十局。',
+          note:'第十季于2026年播出，以"诗意中国"为主题，邀请全国各地诗词爱好者参与竞技。',
+          analysis:'《中国诗词大会》第十季以"诗意中国"为主题，设置了全新的赛制和场景，汇聚了来自全国各地的诗词高手。节目增设了"诗词探源"环节，带观众深入了解经典诗词的创作背景和文化内涵，获得广泛好评。',
+          related:[{id:1,title:'静夜思',author:'李白·唐代'},{id:2,title:'水调歌头',author:'苏轼·宋代'},{id:5,title:'登鹳雀楼',author:'王之涣·唐代'}]
+        }
+      };
+
+      const params = new URLSearchParams(location.search);
+      const id = params.get('id') || '1';
+      const poem = POEMS[id] || POEMS['1'];
+
+      document.getElementById('bc-title').textContent = poem.title;
+      document.getElementById('detail-type').textContent = poem.type;
+      document.getElementById('detail-title').textContent = poem.title;
+      document.getElementById('detail-author').textContent = poem.author;
+      document.getElementById('detail-dynasty').textContent = poem.dynasty;
+      document.getElementById('detail-form').textContent = poem.form;
+      document.getElementById('detail-poem-lines').innerHTML = poem.lines;
+      document.getElementById('detail-note').textContent = poem.note;
+      document.getElementById('detail-analysis').innerHTML = poem.analysis.split('<br>').map(p => `<p>${p}</p>`).join('');
+      document.title = poem.title + ' — 中国诗词大会';
+
+      // 相关推荐
+      const relGrid = document.getElementById('related-grid');
+      relGrid.innerHTML = poem.related.map(r =>
+        `<a href="detail.html?id=${r.id}" class="related-item">
+          <div class="related-item-title">${r.title}</div>
+          <div class="related-item-author">${r.author}</div>
+        </a>`
+      ).join('');
+    })();
+  </script>
+
+</body>
+</html>

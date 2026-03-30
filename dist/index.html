@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国诗词大会 — 首页</title>
+  <meta name="description" content="中国诗词大会官方网站，感受千年诗词之美，传承中华文化经典。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══ 头部 ══════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-poster">🏮</div>
+      <div class="header-text">
+        <h1 class="header-title">中国诗词大会</h1>
+        <p class="header-subtitle">CHINESE POETRY COMPETITION · CCTV 大型文化类竞赛节目</p>
+      </div>
+      <span class="header-badge">第十季 播出中</span>
+    </div>
+  </header>
+
+  <!-- ══ 导航 ══════════════════════════════════════════ -->
+  <nav class="site-nav" id="main-nav">
+    <div class="nav-inner">
+      <div class="nav-item">
+        <a href="index.html" class="nav-link active" id="nav-home">🏠 首页</a>
+      </div>
+      <div class="nav-item">
+        <a href="list.html" class="nav-link" id="nav-list">
+          📚 诗词大全 <span class="nav-arrow">▾</span>
+        </a>
+        <div class="nav-dropdown">
+          <a href="list.html?type=tang">唐诗精选</a>
+          <a href="list.html?type=song">宋词名篇</a>
+          <a href="list.html?type=yuan">元曲欣赏</a>
+          <a href="list.html?type=modern">现代诗词</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="list.html" class="nav-link" id="nav-season">
+          🎬 历届回顾 <span class="nav-arrow">▾</span>
+        </a>
+        <div class="nav-dropdown">
+          <a href="detail.html?id=season10">第十季</a>
+          <a href="detail.html?id=season9">第九季</a>
+          <a href="detail.html?id=season8">第八季</a>
+          <a href="list.html">查看全部</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="list.html#players" class="nav-link" id="nav-player">🏆 选手风采</a>
+      </div>
+      <div class="nav-item">
+        <a href="login.html" class="nav-link" id="nav-login">🔑 登录</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ 轮播 ══════════════════════════════════════════ -->
+  <section class="carousel" id="hero-carousel" aria-label="精彩内容轮播">
+    <div class="carousel-track" id="carousel-track">
+
+      <!-- 第1张 -->
+      <div class="carousel-slide active">
+        <div class="carousel-slide-bg" style="background: linear-gradient(135deg,#1a0800 0%,#5c1a0a 40%,#8b3a2a 70%,#c0392b 100%);"></div>
+        <div class="carousel-overlay"></div>
+        <div class="carousel-content">
+          <span class="carousel-tag">本季经典</span>
+          <h2 class="carousel-title">静夜思</h2>
+          <p class="carousel-desc">床前明月光，疑是地上霜。举头望明月，低头思故乡。<br>— 唐 · 李白</p>
+          <a href="detail.html?id=1" class="carousel-btn">查看全诗 →</a>
+        </div>
+      </div>
+
+      <!-- 第2张 -->
+      <div class="carousel-slide">
+        <div class="carousel-slide-bg" style="background: linear-gradient(135deg,#0a1a2e 0%,#1a3a5c 40%,#2a5a8a 70%,#d4a017 100%);"></div>
+        <div class="carousel-overlay"></div>
+        <div class="carousel-content">
+          <span class="carousel-tag">宋词名篇</span>
+          <h2 class="carousel-title">水调歌头</h2>
+          <p class="carousel-desc">明月几时有？把酒问青天……但愿人长久，千里共婵娟。<br>— 宋 · 苏轼</p>
+          <a href="detail.html?id=2" class="carousel-btn">查看全词 →</a>
+        </div>
+      </div>
+
+      <!-- 第3张 -->
+      <div class="carousel-slide">
+        <div class="carousel-slide-bg" style="background: linear-gradient(135deg,#0e1a08 0%,#2a3a1a 40%,#4a6a2a 70%,#d4a017 100%);"></div>
+        <div class="carousel-overlay"></div>
+        <div class="carousel-content">
+          <span class="carousel-tag">节目精华</span>
+          <h2 class="carousel-title">中国诗词大会</h2>
+          <p class="carousel-desc">赏中华诗词，寻文化基因，品生活之美。<br>第十季正在热播，每周六 CCTV-1</p>
+          <a href="list.html" class="carousel-btn">探索诗词 →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 箭头 -->
+    <div class="carousel-arrows">
+      <button class="carousel-arrow" id="prev-btn" aria-label="上一张">‹</button>
+      <button class="carousel-arrow" id="next-btn" aria-label="下一张">›</button>
+    </div>
+
+    <!-- 指示点 -->
+    <div class="carousel-dots" id="carousel-dots">
+      <button class="carousel-dot active" data-index="0" aria-label="第1张"></button>
+      <button class="carousel-dot" data-index="1" aria-label="第2张"></button>
+      <button class="carousel-dot" data-index="2" aria-label="第3张"></button>
+    </div>
+  </section>
+
+  <!-- ══ 精彩看点 ════════════════════════════════════ -->
+  <section class="highlights-section">
+    <div class="container">
+      <h2 class="section-title">节目亮点</h2>
+      <p class="section-sub">感受千年诗词之美，传承中华文化经典</p>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-icon">🏛️</div>
+          <h3 class="highlight-title">经典传承</h3>
+          <p class="highlight-desc">汇聚唐诗、宋词、元曲等各朝经典，系统展现中国诗词发展脉络。</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🎯</div>
+          <h3 class="highlight-title">竞技对决</h3>
+          <p class="highlight-desc">百人团对抗选手，飞花令、主题赛、擂台赛，精彩纷呈。</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🎓</div>
+          <h3 class="highlight-title">名师点评</h3>
+          <p class="highlight-desc">王立群、蒙曼、康震等文化名师深度解读，诗意盎然。</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🌏</div>
+          <h3 class="highlight-title">文化传播</h3>
+          <p class="highlight-desc">让中华诗词走向世界，弘扬中华优秀传统文化。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 诗词推荐 ════════════════════════════════════ -->
+  <section class="poems-section">
+    <div class="container">
+      <h2 class="section-title">精选诗词</h2>
+      <p class="section-sub">千古流传，遣词华章</p>
+      <div class="poems-grid">
+
+        <a href="detail.html?id=1" class="poem-card">
+          <p class="poem-dynasty">唐 · 李白</p>
+          <h3 class="poem-name">静夜思</h3>
+          <p class="poem-excerpt">床前明月光，疑是地上霜。<br>举头望明月，低头思故乡。</p>
+          <p class="poem-author">五言绝句 | 思乡情怀</p>
+          <span class="poem-icon">🌙</span>
+        </a>
+
+        <a href="detail.html?id=2" class="poem-card">
+          <p class="poem-dynasty">宋 · 苏轼</p>
+          <h3 class="poem-name">水调歌头</h3>
+          <p class="poem-excerpt">明月几时有？把酒问青天。<br>但愿人长久，千里共婵娟。</p>
+          <p class="poem-author">词 · 豪放派 | 中秋怀人</p>
+          <span class="poem-icon">🌕</span>
+        </a>
+
+        <a href="detail.html?id=3" class="poem-card">
+          <p class="poem-dynasty">唐 · 杜甫</p>
+          <h3 class="poem-name">春望</h3>
+          <p class="poem-excerpt">国破山河在，城春草木深。<br>感时花溅泪，恨别鸟惊心。</p>
+          <p class="poem-author">五言律诗 | 忧国忧民</p>
+          <span class="poem-icon">🌸</span>
+        </a>
+
+        <a href="detail.html?id=4" class="poem-card">
+          <p class="poem-dynasty">宋 · 李清照</p>
+          <h3 class="poem-name">如梦令</h3>
+          <p class="poem-excerpt">常记溪亭日暮，沉醉不知归路。<br>争渡，争渡，惊起一滩鸥鹭。</p>
+          <p class="poem-author">词 · 婉约派 | 少女情趣</p>
+          <span class="poem-icon">🦢</span>
+        </a>
+
+        <a href="detail.html?id=5" class="poem-card">
+          <p class="poem-dynasty">唐 · 王之涣</p>
+          <h3 class="poem-name">登鹳雀楼</h3>
+          <p class="poem-excerpt">白日依山尽，黄河入海流。<br>欲穷千里目，更上一层楼。</p>
+          <p class="poem-author">五言绝句 | 壮志凌云</p>
+          <span class="poem-icon">🏯</span>
+        </a>
+
+        <a href="detail.html?id=6" class="poem-card">
+          <p class="poem-dynasty">元 · 马致远</p>
+          <h3 class="poem-name">天净沙·秋思</h3>
+          <p class="poem-excerpt">枯藤老树昏鸦，小桥流水人家。<br>夕阳西下，断肠人在天涯。</p>
+          <p class="poem-author">散曲·小令 | 羁旅悲愁</p>
+          <span class="poem-icon">🍂</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 节目介绍 ════════════════════════════════════ -->
+  <section class="about-section">
+    <div class="container">
+      <h2 class="section-title">关于节目</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,.6)">传承中华文化 · 弘扬诗词之美</p>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>《中国诗词大会》是中央广播电视总台推出的一档大型文化类竞赛节目，以"赏中华诗词、寻文化基因、品生活之美"为宗旨。</p>
+          <p>节目通过对诗词知识的比拼及赏析，引导大众重温经典诗词，激发全民学习传统文化的热情，让古老的诗词在现代焕发出新的活力。</p>
+          <p>自2016年开播以来，节目已累计播出十季，成为中国最具影响力的文化类节目之一，形成强大的社会影响力与文化感召力。</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num">10</span>
+              <div class="stat-label">已播季数</div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">3亿+</span>
+              <div class="stat-label">累计观众</div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">1000+</span>
+              <div class="stat-label">精选诗词</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-visual-char">诗</div>
+          <div class="about-visual-text">
+            <h3>📺 CCTV 播出</h3>
+            <p>每周六 20:00<br>CCTV-1 综合频道</p>
+            <a href="list.html" style="background:var(--gold);color:var(--ink);padding:8px 24px;border-radius:20px;font-weight:700;font-size:.9rem;margin-top:8px;display:inline-block;font-family:'Noto Sans SC',sans-serif;">查看节目 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 底部 ══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>🏮 中国诗词大会</h4>
+        <p>赏中华诗词，寻文化基因，品生活之美。让诗词之光照亮我们的心灵。</p>
+      </div>
+      <div class="footer-col">
+        <h4>快速导航</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="list.html">诗词大全</a></li>
+          <li><a href="detail.html?id=1">内容详情</a></li>
+          <li><a href="login.html">登录</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>诗词分类</h4>
+        <ul>
+          <li><a href="list.html?type=tang">唐诗</a></li>
+          <li><a href="list.html?type=song">宋词</a></li>
+          <li><a href="list.html?type=yuan">元曲</a></li>
+          <li><a href="list.html">更多分类</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <span>班级：7002</span>|<span>学号：60</span>|<span>姓名：同学</span>
+      <br>© 2026 中国诗词大会 · 仅供学习使用
+    </div>
+  </footer>
+
+  <!-- ══ 轮播 JS ════════════════════════════════════ -->
+  <script>
+    (function () {
+      const track  = document.getElementById('carousel-track');
+      const dots   = document.querySelectorAll('.carousel-dot');
+      const slides = document.querySelectorAll('.carousel-slide');
+      let cur = 0, timer;
+
+      function go(n) {
+        slides[cur].classList.remove('active');
+        dots[cur].classList.remove('active');
+        cur = (n + slides.length) % slides.length;
+        slides[cur].classList.add('active');
+        dots[cur].classList.add('active');
+        track.style.transform = `translateX(-${cur * 100}%)`;
+      }
+
+      function autoPlay() { timer = setInterval(() => go(cur + 1), 4000); }
+      function stopPlay() { clearInterval(timer); }
+
+      document.getElementById('prev-btn').addEventListener('click', () => { stopPlay(); go(cur - 1); autoPlay(); });
+      document.getElementById('next-btn').addEventListener('click', () => { stopPlay(); go(cur + 1); autoPlay(); });
+      dots.forEach(d => d.addEventListener('click', () => { stopPlay(); go(+d.dataset.index); autoPlay(); }));
+
+      autoPlay();
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "60-shicidahui",
+  "version": "1.0.0",
+  "description": "《中国诗词大会》静态网站 - Node.js + Commander CLI 工具",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js serve"
+  },
+  "dependencies": {
+    "commander": "^11.1.0"
+  },
+  "author": "学号60",
+  "license": "ISC"
+}

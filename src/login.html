@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录 — 中国诗词大会</title>
+  <meta name="description" content="登录中国诗词大会，参与诗词学习与互动。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+
+  <!-- ══ 头部 ══════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-poster">🏮</div>
+      <div class="header-text">
+        <h1 class="header-title">中国诗词大会</h1>
+        <p class="header-subtitle">CHINESE POETRY COMPETITION · CCTV 大型文化类竞赛节目</p>
+      </div>
+      <span class="header-badge">第十季 播出中</span>
+    </div>
+  </header>
+
+  <!-- ══ 导航 ══════════════════════════════════════════ -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <div class="nav-item">
+        <a href="index.html" class="nav-link">🏠 首页</a>
+      </div>
+      <div class="nav-item">
+        <a href="list.html" class="nav-link">
+          📚 诗词大全 <span class="nav-arrow">▾</span>
+        </a>
+        <div class="nav-dropdown">
+          <a href="list.html?type=tang">唐诗精选</a>
+          <a href="list.html?type=song">宋词名篇</a>
+          <a href="list.html?type=yuan">元曲欣赏</a>
+          <a href="list.html?type=modern">现代诗词</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="list.html" class="nav-link">
+          🎬 历届回顾 <span class="nav-arrow">▾</span>
+        </a>
+        <div class="nav-dropdown">
+          <a href="detail.html?id=season10">第十季</a>
+          <a href="detail.html?id=season9">第九季</a>
+          <a href="detail.html?id=season8">第八季</a>
+          <a href="list.html">查看全部</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="list.html#players" class="nav-link">🏆 选手风采</a>
+      </div>
+      <div class="nav-item">
+        <a href="login.html" class="nav-link active">🔑 登录</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ 登录主体 ════════════════════════════════════ -->
+  <main class="login-main">
+    <!-- 装饰文字 -->
+    <div class="login-decor">
+      <span class="login-decor-char" style="top:-5%;left:-8%;">诗</span>
+      <span class="login-decor-char" style="bottom:-10%;right:-5%;">月</span>
+    </div>
+
+    <!-- 登录卡片 -->
+    <div class="login-box">
+      <div class="login-logo">
+        <span class="login-logo-icon">🏮</span>
+        <div class="login-logo-text">中国诗词大会</div>
+        <div class="login-logo-sub">登录账号，开启诗词之旅</div>
+      </div>
+
+      <form id="login-form" novalidate>
+
+        <!-- 用户名 -->
+        <div class="form-group">
+          <label class="form-label" for="username">用户名</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="form-control"
+            placeholder="请输入用户名"
+            autocomplete="username"
+            maxlength="20"
+          >
+        </div>
+
+        <!-- 密码 -->
+        <div class="form-group">
+          <label class="form-label" for="password">密码</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="请输入密码"
+            autocomplete="current-password"
+            maxlength="30"
+          >
+        </div>
+
+        <!-- 记住我 + 忘记密码 -->
+        <div class="form-row">
+          <label class="form-check">
+            <input type="checkbox" id="remember" name="remember">
+            记住我
+          </label>
+          <a href="#" class="form-forget" id="forget-link">忘记密码？</a>
+        </div>
+
+        <!-- 提交 -->
+        <button type="submit" class="btn-submit" id="submit-btn">登录</button>
+
+      </form>
+
+      <div class="login-divider">或</div>
+
+      <div class="login-signup-tip">
+        还没有账号？<a href="#" id="signup-link">立即注册</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Toast 提示 -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <!-- ══ 底部 ══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>🏮 中国诗词大会</h4>
+        <p>赏中华诗词，寻文化基因，品生活之美。让诗词之光照亮我们的心灵。</p>
+      </div>
+      <div class="footer-col">
+        <h4>快速导航</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="list.html">诗词大全</a></li>
+          <li><a href="detail.html?id=1">内容详情</a></li>
+          <li><a href="login.html">登录</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>诗词分类</h4>
+        <ul>
+          <li><a href="list.html?type=tang">唐诗</a></li>
+          <li><a href="list.html?type=song">宋词</a></li>
+          <li><a href="list.html?type=yuan">元曲</a></li>
+          <li><a href="list.html">更多分类</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <span>班级：7002</span>|<span>学号：60</span>|<span>姓名：同学</span>
+      <br>© 2026 中国诗词大会 · 仅供学习使用
+    </div>
+  </footer>
+
+  <!-- ══ 登录 JS ════════════════════════════════════ -->
+  <script>
+    (function () {
+      const form   = document.getElementById('login-form');
+      const toast  = document.getElementById('toast');
+      let toastTimer;
+
+      function showToast(msg, type) {
+        clearTimeout(toastTimer);
+        toast.textContent = (type === 'success' ? '✅ ' : '❌ ') + msg;
+        toast.className = `toast ${type} show`;
+        toastTimer = setTimeout(() => { toast.classList.remove('show'); }, 3000);
+      }
+
+      // 忘记密码提示
+      document.getElementById('forget-link').addEventListener('click', e => {
+        e.preventDefault();
+        showToast('请联系管理员重置密码', 'error');
+      });
+
+      // 立即注册提示
+      document.getElementById('signup-link').addEventListener('click', e => {
+        e.preventDefault();
+        showToast('注册功能即将上线，敬请期待！', 'error');
+      });
+
+      // 表单提交
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const username = document.getElementById('username').value.trim();
+        const password = document.getElementById('password').value.trim();
+        const btn = document.getElementById('submit-btn');
+
+        if (!username) {
+          showToast('请输入用户名', 'error');
+          document.getElementById('username').focus();
+          return;
+        }
+        if (!password) {
+          showToast('请输入密码', 'error');
+          document.getElementById('password').focus();
+          return;
+        }
+        if (password.length < 6) {
+          showToast('密码长度不能少于6位', 'error');
+          document.getElementById('password').focus();
+          return;
+        }
+
+        // 模拟登录请求
+        btn.disabled = true;
+        btn.textContent = '登录中…';
+
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.textContent = '登录';
+
+          // 模拟：admin/123456 登录成功
+          if (username === 'admin' && password === '123456') {
+            showToast('登录成功！欢迎回来，' + username, 'success');
+            setTimeout(() => { window.location.href = 'index.html'; }, 1500);
+          } else {
+            showToast('用户名或密码错误，请重试', 'error');
+          }
+        }, 900);
+      });
+    })();
+  </script>
+
+</body>
+</html>

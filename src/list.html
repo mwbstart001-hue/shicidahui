@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>诗词大全 — 中国诗词大会</title>
+  <meta name="description" content="浏览中国诗词大会精选诗词，包含唐诗、宋词、元曲等经典名篇。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══ 头部 ══════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-poster">🏮</div>
+      <div class="header-text">
+        <h1 class="header-title">中国诗词大会</h1>
+        <p class="header-subtitle">CHINESE POETRY COMPETITION · CCTV 大型文化类竞赛节目</p>
+      </div>
+      <span class="header-badge">第十季 播出中</span>
+    </div>
+  </header>
+
+  <!-- ══ 导航 ══════════════════════════════════════════ -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <div class="nav-item">
+        <a href="index.html" class="nav-link">🏠 首页</a>
+      </div>
+      <div class="nav-item">
+        <a href="list.html" class="nav-link active">
+          📚 诗词大全 <span class="nav-arrow">▾</span>
+        </a>
+        <div class="nav-dropdown">
+          <a href="list.html?type=tang">唐诗精选</a>
+          <a href="list.html?type=song">宋词名篇</a>
+          <a href="list.html?type=yuan">元曲欣赏</a>
+          <a href="list.html?type=modern">现代诗词</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="list.html" class="nav-link">
+          🎬 历届回顾 <span class="nav-arrow">▾</span>
+        </a>
+        <div class="nav-dropdown">
+          <a href="detail.html?id=season10">第十季</a>
+          <a href="detail.html?id=season9">第九季</a>
+          <a href="detail.html?id=season8">第八季</a>
+          <a href="list.html">查看全部</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="list.html#players" class="nav-link">🏆 选手风采</a>
+      </div>
+      <div class="nav-item">
+        <a href="login.html" class="nav-link">🔑 登录</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ 页面 Hero ══════════════════════════════════ -->
+  <div class="page-hero">
+    <h1>📚 诗词大全</h1>
+    <p>千年诗词，一览无余 · 筛选分类，探索经典</p>
+  </div>
+
+  <!-- ══ 分类筛选 ════════════════════════════════════ -->
+  <div class="filter-bar" id="filter-bar">
+    <button class="filter-btn active" data-type="all">全部</button>
+    <button class="filter-btn" data-type="tang">唐诗</button>
+    <button class="filter-btn" data-type="song">宋词</button>
+    <button class="filter-btn" data-type="yuan">元曲</button>
+    <button class="filter-btn" data-type="modern">现代</button>
+  </div>
+
+  <!-- ══ 诗词列表 ════════════════════════════════════ -->
+  <section class="list-section">
+    <div class="container">
+      <h2 class="section-title">经典诗词</h2>
+      <p class="section-sub">点击卡片查看全文与赏析</p>
+      <div class="list-grid" id="poem-list">
+
+        <a href="detail.html?id=1" class="list-card" data-type="tang">
+          <div class="list-card-img"><span>🌙</span></div>
+          <div class="list-card-body">
+            <span class="list-card-tag">唐诗</span>
+            <h2 class="list-card-title">静夜思</h2>
+            <p class="list-card-author">李白 · 唐代</p>
+            <p class="list-card-excerpt">床前明月光，疑是地上霜。举头望明月，低头思故乡。</p>
+          </div>
+          <div class="list-card-footer">
+            <span>五言绝句</span>
+            <span class="list-card-more">查看详情 ›</span>
+          </div>
+        </a>
+
+        <a href="detail.html?id=2" class="list-card" data-type="song">
+          <div class="list-card-img" style="background:linear-gradient(135deg,#0a1a3e,#1a3a6c,#d4a017)"><span>🌕</span></div>
+          <div class="list-card-body">
+            <span class="list-card-tag">宋词</span>
+            <h2 class="list-card-title">水调歌头·明月几时有</h2>
+            <p class="list-card-author">苏轼 · 宋代</p>
+            <p class="list-card-excerpt">明月几时有？把酒问青天。不知天上宫阙，今夕是何年。</p>
+          </div>
+          <div class="list-card-footer">
+            <span>词·豪放派</span>
+            <span class="list-card-more">查看详情 ›</span>
+          </div>
+        </a>
+
+        <a href="detail.html?id=3" class="list-card" data-type="tang">
+          <div class="list-card-img" style="background:linear-gradient(135deg,#1a3a0a,#2a6a1a,#c0392b)"><span>🌸</span></div>
+          <div class="list-card-body">
+            <span class="list-card-tag">唐诗</span>
+            <h2 class="list-card-title">春望</h2>
+            <p class="list-card-author">杜甫 · 唐代</p>
+            <p class="list-card-excerpt">国破山河在，城春草木深。感时花溅泪，恨别鸟惊心。</p>
+          </div>
+          <div class="list-card-footer">
+            <span>五言律诗</span>
+            <span class="list-card-more">查看详情 ›</span>
+          </div>
+        </a>
+
+        <a href="detail.html?id=4" class="list-card" data-type="song">
+          <div class="list-card-img" style="background:linear-gradient(135deg,#2a0a3a,#6a1a6c,#d4a017)"><span>🦢</span></div>
+          <div class="list-card-body">
+            <span class="list-card-tag">宋词</span>
+            <h2 class="list-card-title">如梦令</h2>
+            <p class="list-card-author">李清照 · 宋代</p>
+            <p class="list-card-excerpt">常记溪亭日暮，沉醉不知归路。兴尽晚回舟，误入藕花深处。</p>
+          </div>
+          <div class="list-card-footer">
+            <span>词·婉约派</span>
+            <span class="list-card-more">查看详情 ›</span>
+          </div>
+        </a>
+
+        <a href="detail.html?id=5" class="list-card" data-type="tang">
+          <div class="list-card-img" style="background:linear-gradient(135deg,#3a2a0a,#8a5a1a,#c0392b)"><span>🏯</span></div>
+          <div class="list-card-body">
+            <span class="list-card-tag">唐诗</span>
+            <h2 class="list-card-title">登鹳雀楼</h2>
+            <p class="list-card-author">王之涣 · 唐代</p>
+            <p class="list-card-excerpt">白日依山尽，黄河入海流。欲穷千里目，更上一层楼。</p>
+          </div>
+          <div class="list-card-footer">
+            <span>五言绝句</span>
+            <span class="list-card-more">查看详情 ›</span>
+          </div>
+        </a>
+
+        <a href="detail.html?id=6" class="list-card" data-type="yuan">
+          <div class="list-card-img" style="background:linear-gradient(135deg,#2a1a0a,#5a3a1a,#8a6a2a)"><span>🍂</span></div>
+          <div class="list-card-body">
+            <span class="list-card-tag">元曲</span>
+            <h2 class="list-card-title">天净沙·秋思</h2>
+            <p class="list-card-author">马致远 · 元代</p>
+            <p class="list-card-excerpt">枯藤老树昏鸦，小桥流水人家，古道西风瘦马。</p>
+          </div>
+          <div class="list-card-footer">
+            <span>散曲·小令</span>
+            <span class="list-card-more">查看详情 ›</span>
+          </div>
+        </a>
+
+        <a href="detail.html?id=7" class="list-card" data-type="tang">
+          <div class="list-card-img" style="background:linear-gradient(135deg,#0a2a3a,#1a5a6c,#2a8a9a)"><span>🌊</span></div>
+          <div class="list-card-body">
+            <span class="list-card-tag">唐诗</span>
+            <h2 class="list-card-title">望庐山瀑布</h2>
+            <p class="list-card-author">李白 · 唐代</p>
+            <p class="list-card-excerpt">日照香炉生紫烟，遥看瀑布挂前川。飞流直下三千尺，疑是银河落九天。</p>
+          </div>
+          <div class="list-card-footer">
+            <span>七言绝句</span>
+            <span class="list-card-more">查看详情 ›</span>
+          </div>
+        </a>
+
+        <a href="detail.html?id=8" class="list-card" data-type="song">
+          <div class="list-card-img" style="background:linear-gradient(135deg,#3a0a0a,#8a1a1a,#c0392b)"><span>⚔️</span></div>
+          <div class="list-card-body">
+            <span class="list-card-tag">宋词</span>
+            <h2 class="list-card-title">满江红·怒发冲冠</h2>
+            <p class="list-card-author">岳飞 · 宋代</p>
+            <p class="list-card-excerpt">怒发冲冠，凭栏处，潇潇雨歇。抬望眼，仰天长啸，壮怀激烈。</p>
+          </div>
+          <div class="list-card-footer">
+            <span>词·爱国</span>
+            <span class="list-card-more">查看详情 ›</span>
+          </div>
+        </a>
+
+        <a href="detail.html?id=9" class="list-card" data-type="modern">
+          <div class="list-card-img" style="background:linear-gradient(135deg,#0a1a3a,#1a3a8a,#4a6ac0)"><span>🌹</span></div>
+          <div class="list-card-body">
+            <span class="list-card-tag">现代诗</span>
+            <h2 class="list-card-title">再别康桥</h2>
+            <p class="list-card-author">徐志摩 · 现代</p>
+            <p class="list-card-excerpt">轻轻的我走了，正如我轻轻的来；我轻轻的招手，作别西天的云彩。</p>
+          </div>
+          <div class="list-card-footer">
+            <span>现代诗</span>
+            <span class="list-card-more">查看详情 ›</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 选手风采 ════════════════════════════════════ -->
+  <section class="players-section" id="players">
+    <div class="container">
+      <h2 class="section-title">选手风采</h2>
+      <p class="section-sub">他们用诗词诠释中华文化之美</p>
+      <div class="players-grid">
+        <div class="player-card">
+          <div class="player-avatar">👩</div>
+          <h3 class="player-name">陈小雅</h3>
+          <p class="player-title">🏆 第十季总冠军</p>
+          <p class="player-desc">来自江苏苏州，古典文学研究生，自幼熟读唐诗宋词，以深厚的诗词功底和优雅的气质赢得全国观众喜爱。</p>
+        </div>
+        <div class="player-card">
+          <div class="player-avatar">👦</div>
+          <h3 class="player-name">张文翰</h3>
+          <p class="player-title">🥈 第十季亚军</p>
+          <p class="player-desc">北京大学中文系学生，擅长宋词与元曲，飞花令环节多次创造纪录，被称为"诗词快枪手"。</p>
+        </div>
+        <div class="player-card">
+          <div class="player-avatar">👩‍🦱</div>
+          <h3 class="player-name">李诗云</h3>
+          <p class="player-title">🥉 第十季季军</p>
+          <p class="player-desc">四川成都高中语文教师，将诗词融入日常教学，以独特的解读角度和感染力赢得评委高度赞赏。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 底部 ══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>🏮 中国诗词大会</h4>
+        <p>赏中华诗词，寻文化基因，品生活之美。让诗词之光照亮我们的心灵。</p>
+      </div>
+      <div class="footer-col">
+        <h4>快速导航</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="list.html">诗词大全</a></li>
+          <li><a href="detail.html?id=1">内容详情</a></li>
+          <li><a href="login.html">登录</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>诗词分类</h4>
+        <ul>
+          <li><a href="list.html?type=tang">唐诗</a></li>
+          <li><a href="list.html?type=song">宋词</a></li>
+          <li><a href="list.html?type=yuan">元曲</a></li>
+          <li><a href="list.html">更多分类</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <span>班级：7002</span>|<span>学号：60</span>|<span>姓名：同学</span>
+      <br>© 2026 中国诗词大会 · 仅供学习使用
+    </div>
+  </footer>
+
+  <!-- ══ 筛选 JS ════════════════════════════════════ -->
+  <script>
+    (function () {
+      // 读取 URL 参数
+      const params = new URLSearchParams(location.search);
+      const typeParam = params.get('type') || 'all';
+
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.list-card');
+
+      function applyFilter(type) {
+        filterBtns.forEach(b => b.classList.toggle('active', b.dataset.type === type));
+        cards.forEach(c => {
+          if (type === 'all' || c.dataset.type === type) {
+            c.style.display = '';
+          } else {
+            c.style.display = 'none';
+          }
+        });
+      }
+
+      applyFilter(typeParam);
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => applyFilter(btn.dataset.type));
+      });
+    })();
+  </script>
+
+</body>
+</html>
