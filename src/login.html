@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国诗词大会 - 登录</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=%E4%B8%AD%E5%9B%BD%E8%AF%97%E8%AF%8D%E5%A4%A7%E4%BC%9A%E6%B5%B7%E6%8A%A5%20%E5%8F%A4%E7%BA%A2%E8%89%B2%E4%B8%AD%E5%9B%BD%E9%A3%8E%E6%A0%BC%20%E6%96%87%E5%8C%96&image_size=square" alt="中国诗词大会">
+                <h1>中国诗词大会</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li class="dropdown">
+                    <a href="list.html">诗词赏析</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="list.html?category=tang">唐诗三百首</a></li>
+                        <li><a href="list.html?category=song">宋词精选</a></li>
+                        <li><a href="list.html?category=yuan">元曲欣赏</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="list.html">选手风采</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="detail.html">冠军选手</a></li>
+                        <li><a href="detail.html">人气选手</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html">登录</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="login-section">
+            <div class="login-box">
+                <h2>用户登录</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">用户名</label>
+                        <input type="text" id="username" name="username" placeholder="请输入用户名" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密码</label>
+                        <input type="password" id="password" name="password" placeholder="请输入密码" required>
+                    </div>
+                    <button type="submit" class="login-btn">登 录</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 中国诗词大会</p>
+            <p>班级：软件工程班 学号：2024001 姓名：张三</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            if (username && password) {
+                alert('登录成功！欢迎回来，' + username);
+                window.location.href = 'index.html';
+            } else {
+                alert('请输入用户名和密码');
+            }
+        });
+    </script>
+</body>
+</html>
